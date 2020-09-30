@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="BookMyShow.Common.Listeners"></listener>-->
+<!--    </listeners>-->
+    <test verbose="2" preserve-order="true" name="E:/IntelliJ Projects/BookMyShow">
+        <classes>
+            <class name="BookMyShow.TestScripts.ScriptExecution">
+                <methods>
+                    <parameter name="location" value="Kochi"></parameter>-->
+                    <include name="TestCase_1_LocationSelection"/>-->
+                    <include name="TestCase_2_MovieSearch"/>
+                    <include name="TestCase_3_SearchCastandCrew"/>
+                    <include name="TestCase_4_SearchCastandCrewNegative"/>
+                    <include name="TestCase_5_ListMyShow"/>
+                    <include name="TestCase_6_Services"/>
+                    <include name="TestCase_7_Reports"/>
+                    <include name="TestCase_8_Offers"/>
+                    <parameter name="discountoffer" value="ICICI Bank 25% Discount Offer"></parameter>
+                    <include name="TestCase_9_DiscountOffer"/>
+                    <parameter name="discountoffer1" value="Kotak Mahindra Offer"></parameter>
+                    <include name="TestCase_10_DiscountOfferNegative"/>
+                    <include name="TestCase_11_FooterTextValidation" />
+                    <parameter name="language" value="English"></parameter>
+                    <include name="TestCase_12_SelectLanguage"/>
+                    <parameter name="city" value="Goa"></parameter>
+                    <include name="TestCase_13_SelectCity"/>
+<!--                    <parameter name="menufanhood" value="Fanhood"></parameter>-->
+<!--                    <include name="TestCase_15_SelectFanhood"></include>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
